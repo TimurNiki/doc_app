@@ -1,9 +1,7 @@
 import 'package:doc_app/data/lists/onboard.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import '../../core/constants/app_strings.dart';
 import '../../core/constants/app_styles.dart';
-import '../../core/constants/screen_strings/onboard.dart';
 import '../../core/widgets/button.dart';
 import '../../core/widgets/settings_button.dart';
 import '../widgets/onboard_widget.dart';
@@ -17,7 +15,7 @@ class Onboard extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         title: const Text(
-          OnboardStrings.profile,
+          AppStrings.profile,
           style: AppFonts.w600s17,
         ),
         actions: [
@@ -27,16 +25,16 @@ class Onboard extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding:  EdgeInsets.all(20.0.h),
+        padding:  const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              OnboardStrings.wP,
+              AppStrings.wP,
               style: AppFonts.w500s22,
             ),
-             SizedBox(
-              height: 25.h,
+             const SizedBox(
+              height: 25,
             ),
             Column(
               children: OnboardList.data
@@ -53,10 +51,10 @@ class Onboard extends StatelessWidget {
                   )
                   .toList(),
             ),
-             SizedBox(
-              height: 5.h,
+             const SizedBox(
+              height: 5,
             ),
-            CustomButton(onPressed: () {}, title: OnboardStrings.signIn)
+            CustomButton(onPressed: () {}, title: AppStrings.signIn)
           ],
         ),
       ),

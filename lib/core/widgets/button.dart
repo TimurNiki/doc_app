@@ -2,7 +2,6 @@
 import 'package:doc_app/core/constants/app_colors.dart';
 import 'package:doc_app/core/constants/app_styles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
@@ -16,8 +15,8 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: SizedBox(
-        height: 54.h,
-        width: 296.w,
+        height: 54,
+        width: 296,
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
             backgroundColor: AppColors.buttonColor,
