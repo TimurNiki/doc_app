@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../core/constants/app_styles.dart';
 
@@ -18,10 +19,10 @@ class OnBoardWidget extends StatelessWidget {
       children: [
         Image.asset(
           image,
-          height: 32,
+          height: 32.h,
         ),
         SizedBox(
-          width: 18,
+          width: 18.w,
         ),
         Flexible(
           child: Text(
