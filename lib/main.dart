@@ -1,6 +1,6 @@
+import 'package:doc_app/feature/pages/sign_in.dart';
 import 'package:flutter/material.dart';
 import 'core/constants/app_colors.dart';
-import 'feature/pages/sign_in.dart';
 
 void main() => runApp(const MyApp());
 

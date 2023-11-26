@@ -1,4 +1,5 @@
 import 'package:doc_app/data/lists/onboard.dart';
+import 'package:doc_app/feature/pages/sign_in.dart';
 import 'package:flutter/material.dart';
 import '../../core/constants/app_strings.dart';
 import '../../core/constants/app_styles.dart';
@@ -54,7 +55,9 @@ class Onboard extends StatelessWidget {
              const SizedBox(
               height: 5,
             ),
-            CustomButton(onPressed: () {}, title: AppStrings.signIn)
+            CustomButton(onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const SignIn(),));
+            }, title: AppStrings.signIn)
           ],
         ),
       ),
