@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-
 import '../../core/constants/app_styles.dart';
 
 class OnBoardWidget extends StatelessWidget {

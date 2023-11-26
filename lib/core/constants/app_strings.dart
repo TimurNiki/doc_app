@@ -9,6 +9,10 @@ abstract class AppStrings{
   static const String signIn ='Sign In';
 
   //* SignIn Strings
-  
+  static const String login = "Login";
+  static const String phoneNumber = 'Phone Number';
+  static const String confirmation = 'A one-time SMS message with a confirmation code will be sent to the number you specified.';
+  static const String next ='Next';
+
 
 }
