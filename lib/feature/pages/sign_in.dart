@@ -1,7 +1,7 @@
-import 'package:doc_app/core/constants/app_styles.dart';
+import 'package:doc_app/core/constants/index.dart';
 import 'package:flutter/material.dart';
-import '../../core/constants/app_strings.dart';
-import '../../core/widgets/button.dart';
+import '../../core/core_widgets/button.dart';
+import '../widgets/number_textfield.dart';
 import 'number_confirmation.dart';
 
 class SignIn extends StatefulWidget {
@@ -10,7 +10,9 @@ class SignIn extends StatefulWidget {
   @override
   State<SignIn> createState() => _SignInState();
 }
+
 final TextEditingController controller = TextEditingController();
+
 class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
@@ -20,7 +22,7 @@ class _SignInState extends State<SignIn> {
             IconButton(onPressed: () {}, icon: const Icon(Icons.close_rounded)),
         title: const Center(child: Text(AppStrings.login)),
       ),
-      body:  Padding(
+      body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -34,22 +36,25 @@ class _SignInState extends State<SignIn> {
             const SizedBox(
               height: 65,
             ),
-             TextField(controller: controller,
-             keyboardType:TextInputType.phone ,
-              decoration: const InputDecoration(
-                
-                  labelText: AppStrings.phoneNumber,
-                  labelStyle: AppFonts.w400s15,
-                  floatingLabelStyle: AppFonts.w400s15,
-                  border:
-                      UnderlineInputBorder(borderRadius: BorderRadius.zero)),
+            const NumberTextField(),
+            const SizedBox(
+              height: 15,
             ),
-            const SizedBox(height: 15,),
-            const Text(AppStrings.confirmation,style: AppFonts.w400s15,),
+            const Text(
+              AppStrings.confirmation,
+              style: AppFonts.w400s15,
+            ),
             const Spacer(),
-            CustomButton(title: AppStrings.next, onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) =>const NumberConfirmation() ,));
-            },)
+            CustomButton(
+              title: AppStrings.next,
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const NumberConfirmation(),
+                    ));
+              },
+            )
           ],
         ),
       ),

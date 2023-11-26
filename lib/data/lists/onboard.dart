@@ -11,13 +11,11 @@ abstract class OnboardList {
     ),
     OnBoardModel(
       image: Assets.pngs.bell.toString(),
-      title:
-          AppStrings.save,
+      title: AppStrings.save,
     ),
     OnBoardModel(
       image: Assets.pngs.bell.toString(),
-      title:
-          AppStrings.feedback,
+      title: AppStrings.feedback,
     ),
     OnBoardModel(
       image: Assets.pngs.bell.toString(),

@@ -1,5 +1,7 @@
+// part of 'constants.dart';
+
 abstract class AppStrings {
-  //* Onboard Strings
+  //* "Onboard" Strings
   static const String profile = "Profile";
   static const String wP = 'Why do you need a profile?';
   static const String appointment =
@@ -12,16 +14,16 @@ abstract class AppStrings {
       'Receive notifications about reception or incoming messages';
   static const String signIn = 'Sign In';
 
-  //* SignIn Strings
+  //* "SignIn" Strings
   static const String login = "Login";
   static const String phoneNumber = 'Phone Number';
   static const String confirmation =
       'A one-time SMS message with a confirmation code will be sent to the number you specified.';
   static const String next = 'Next';
 
-  //* NumberConfirmation
+  //* "NumberConfirmation" Strings
   static const String numberConfirmation = "Number Confirmation";
   static const String codeFromSMS = 'Enter the code from SMS';
   static const String code = 'Code';
-  static const String receiveCode = 'Receive code';
+  static const String codeAgain = 'Get the code again';
 }

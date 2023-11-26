@@ -1,6 +1,8 @@
-import 'package:doc_app/feature/pages/sign_in.dart';
+import 'package:doc_app/feature/pages/number_confirmation.dart';
 import 'package:flutter/material.dart';
-import 'core/constants/app_colors.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'core/constants/index.dart';
+import 'generated/l10n.dart';
 
 void main() => runApp(const MyApp());
 
@@ -10,6 +12,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      locale: const Locale('en'),
+      localizationsDelegates: const [
+                S.delegate,
+                GlobalMaterialLocalizations.delegate,
+                GlobalWidgetsLocalizations.delegate,
+                GlobalCupertinoLocalizations.delegate,
+            ],
+            supportedLocales: S.delegate.supportedLocales,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
@@ -19,7 +29,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'sf pro',
         useMaterial3: true,
       ),
-      home: const SignIn(),
+      home: const NumberConfirmation(),
     );
   }
 }

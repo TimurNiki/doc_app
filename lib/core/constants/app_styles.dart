@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'app_colors.dart';
 
+
 abstract class AppFonts {
   static const TextStyle w600s17 = TextStyle(
     fontSize: 17,

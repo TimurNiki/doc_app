@@ -1,7 +1,10 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:doc_app/core/constants/app_colors.dart';
-import 'package:doc_app/core/constants/app_styles.dart';
+
 import 'package:flutter/material.dart';
+
+import '../constants/index.dart';
+
+
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
