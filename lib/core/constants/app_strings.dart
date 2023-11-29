@@ -1,5 +1,3 @@
-// part of 'constants.dart';
-
 abstract class AppStrings {
   //* "Onboard" Strings
   static const String profile = "Profile";
@@ -26,4 +24,10 @@ abstract class AppStrings {
   static const String codeFromSMS = 'Enter the code from SMS';
   static const String code = 'Code';
   static const String codeAgain = 'Get the code again';
+  //* "ProfileCreation" Strings
+  static const String profileCreation = "Profile creation";
+  static const String name = "Name";
+  static const String enterYourName = "Enter your name";
+   static const String lastName = "Last name";
+  static const String enterYourLastName ='Enter your last name';
 }

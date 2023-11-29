@@ -1,7 +1,7 @@
-import 'package:doc_app/feature/pages/number_confirmation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'core/constants/index.dart';
+import 'feature/pages/profile_creation.dart';
 import 'generated/l10n.dart';
 
 void main() => runApp(const MyApp());
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'sf pro',
         useMaterial3: true,
       ),
-      home: const NumberConfirmation(),
+      home: const ProfileCreation(),
     );
   }
 }
