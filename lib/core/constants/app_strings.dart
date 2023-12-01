@@ -1,4 +1,5 @@
-abstract class AppStrings {
+ class AppStrings {
+  const AppStrings._();
   //* "Onboard" Strings
   static const String profile = "Profile";
   static const String wP = 'Why do you need a profile?';
@@ -30,4 +31,6 @@ abstract class AppStrings {
   static const String enterYourName = "Enter your name";
    static const String lastName = "Last name";
   static const String enterYourLastName ='Enter your last name';
+  //* "MyProfile" Strings
+  static const String myProfile ="";
 }

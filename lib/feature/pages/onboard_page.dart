@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:doc_app/core/constants/index.dart';
 import '../../core/core_widgets/button.dart';
 import '../../core/core_widgets/settings_button.dart';
+import '../../core/theme/app_styles.dart';
 import '../widgets/onboard_widget.dart';
 
 class Onboard extends StatelessWidget {

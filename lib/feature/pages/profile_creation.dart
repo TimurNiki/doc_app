@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../core/constants/index.dart';
 import '../../core/core_widgets/button.dart';
+import '../../core/theme/app_styles.dart';
 
 class ProfileCreation extends StatefulWidget {
   const ProfileCreation({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'core/constants/index.dart';
+import 'core/theme/app_colors.dart';
 import 'feature/pages/profile_creation.dart';
 import 'generated/l10n.dart';
 

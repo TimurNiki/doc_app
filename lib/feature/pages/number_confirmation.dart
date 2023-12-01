@@ -2,6 +2,7 @@ import 'package:doc_app/core/constants/index.dart';
 import 'package:doc_app/core/core_widgets/button.dart';
 import 'package:doc_app/feature/pages/profile_creation.dart';
 import 'package:flutter/material.dart';
+import '../../core/theme/app_styles.dart';
 import '../widgets/code_textfield.dart';
 
 class NumberConfirmation extends StatefulWidget {
