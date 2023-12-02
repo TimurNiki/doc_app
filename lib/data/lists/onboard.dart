@@ -1,24 +1,23 @@
+import 'package:doc_app/resources/resources.dart';
 import '../../core/constants/app_strings.dart';
-
-import '../../gen/assets.gen.dart';
 import 'onboard_model.dart';
 
 abstract class OnboardList {
   static List<OnBoardModel> data = [
     OnBoardModel(
-      image: Assets.pngs.bell.toString(),
+      image: AppPngs.hospital,
       title: AppStrings.appointment,
     ),
     OnBoardModel(
-      image: Assets.pngs.bell.toString(),
+      image: AppPngs.clipboard,
       title: AppStrings.save,
     ),
     OnBoardModel(
-      image: Assets.pngs.bell.toString(),
+      image: AppPngs.speech,
       title: AppStrings.feedback,
     ),
     OnBoardModel(
-      image: Assets.pngs.bell.toString(),
+      image: AppPngs.bell,
       title: AppStrings.notification,
     ),
   ];

@@ -20,7 +20,7 @@ class _SignInState extends State<SignIn> {
     return Scaffold(
       appBar: AppBar(
         leading:
-            IconButton(onPressed: () {}, icon: const Icon(Icons.close_rounded)),
+            IconButton(onPressed: () {Navigator.pop(context);}, icon: const Icon(Icons.close_rounded)),
         title: const Center(child: Text(AppStrings.login)),
       ),
       body: Padding(

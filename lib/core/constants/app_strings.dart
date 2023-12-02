@@ -1,5 +1,5 @@
- class AppStrings {
-  const AppStrings._();
+ final class AppStrings {
+   const AppStrings._();
   //* "Onboard" Strings
   static const String profile = "Profile";
   static const String wP = 'Why do you need a profile?';
