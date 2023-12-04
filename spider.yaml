@@ -27,12 +27,12 @@ use_references_list: false
 #   file_name: my_fonts
 
 # Location where all the generated references will be stored
-package: resources
+package: core/resources
 
 groups:
-  - path: assets/pngs/
-    class_name: AppPngs
+  - path: assets/png/
+    class_name: AppPng
     types: [ .png, .jpg, .jpeg, .webp, .webm, .bmp ]
-  - path: assets/svgs/
-    class_name: AppSvgs
+  - path: assets/svg/
+    class_name: AppSvg
     types: [ .svg ]
