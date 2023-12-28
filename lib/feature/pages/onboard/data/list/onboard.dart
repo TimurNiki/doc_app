@@ -1,5 +1,5 @@
 import 'package:doc_app/core/resources/resources.dart';
-import '../../core/constants/app_strings.dart';
+import '../../../../../core/constants/app_strings.dart';
 import 'onboard_model.dart';
 
 abstract class OnboardList {

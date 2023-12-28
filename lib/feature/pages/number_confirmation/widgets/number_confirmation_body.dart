@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../../core/constants/index.dart';
 import '../../../../core/widgets/button.dart';
 import '../../../../core/theme/app_styles.dart';
@@ -9,7 +8,6 @@ import '../../profile_creation/profile_creation.dart';
 class NumberConfirmationBody extends StatelessWidget {
    const NumberConfirmationBody({
     super.key, required this.controller,
-    
   });
 
   final TextEditingController controller;

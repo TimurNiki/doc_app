@@ -1,12 +1,12 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-
 import '../../../../core/constants/index.dart';
 import '../../../../core/widgets/button.dart';
 import '../../../../core/theme/app_styles.dart';
-import '../../../../data/lists/onboard.dart';
+import '../data/list/onboard.dart';
 import '../../sign_in/sign_in.dart';
 import 'onboard_widget.dart';
-
+@RoutePage()
 class OnboardBody extends StatelessWidget {
   const OnboardBody({
     super.key,
@@ -47,10 +47,11 @@ class OnboardBody extends StatelessWidget {
           CustomButton(
               onPressed: () {
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const SignIn(),
-                    ));
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const SignIn(),
+                  ),
+                );
               },
               title: AppStrings.signIn)
         ],
@@ -58,4 +59,3 @@ class OnboardBody extends StatelessWidget {
     );
   }
 }
-

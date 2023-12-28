@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/index.dart';
 import '../../../../core/theme/app_colors.dart';
+import 'clear_button.dart';
 
 
 class CodeTextField extends StatelessWidget {
@@ -36,18 +37,11 @@ class CodeTextField extends StatelessWidget {
         ),
         prefixText: AppStrings.code,
         prefixStyle: AppFonts.w600s18.copyWith(color: AppColors.black),
-        suffixIcon: CircleAvatar(
-          backgroundColor: AppColors.iconBackGroundColor,
-          radius: 17,
-          child: IconButton(
-            onPressed: () {
-              controller.clear();
-            },
-            icon: const Icon(Icons.clear),
-          ),
-        ),
+        suffixIcon: ClearButton(controller: controller),
       ),
     );
   }
 }
+
+
 

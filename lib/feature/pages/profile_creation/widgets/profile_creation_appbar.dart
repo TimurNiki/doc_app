@@ -20,7 +20,6 @@ class ProfileCreationAppBar extends StatelessWidget implements PreferredSizeWidg
   }
   
   @override
-  
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
   
 }
